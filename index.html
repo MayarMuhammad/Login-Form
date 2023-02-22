@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="p-5 signin">
+    <div class="container w-50 m-auto p-5 box">
+      <h1 class="mb-3 text-center">Smart Login System</h1>
+      <div>
+        <div class="mb-3">
+          <input type="email" class="form-control bg-transparent mb-2" id="signinEmail" aria-describedby="emailHelp"
+            placeholder="Enter your Email">
+          <label for="registedEmail" class="emailValid w-100 text-center">Enter a valid Email</label>
+        </div>
+        <div class="mb-3">
+          <div class="input-group flex-nowrap mb-2">
+            <input type="password" class="form-control bg-transparent" id="signinPassword"
+              placeholder="Enter your password" aria-label="Password" aria-describedby="addon-wrapping">
+            <span class="input-group-text bg-transparent p-0 justify-content-center" id="addon-wrapping"><i
+                class="fa-solid fa-eye-slash showPassword text-white-50"></i></span>
+          </div>
+          <label for="registedPassword" class="passwordValid w-100 text-center">Enter a valid Password</label>
+        </div>
+        <button type="submit" class="btn btn-outline-info w-100 my-2 login">Login</button>
+        <label class="successAlert w-100 text-center my-2">Login Successfully!</label>
+        <label class="wrongPassword w-100 text-center my-2">Wrong Password!</label>
+        <label class="emailExist w-100 text-center my-2">Email doesn't exist, Please signup!</label>
+      </div>
+      <p class="text-white mt-4">Don't have an account? <span><a href="./signup.html"
+            class="text-decoration-none text-info signup">Sign Up</a></span></p>
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

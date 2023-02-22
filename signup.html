@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="p-5 register">
+    <div class="container w-50 m-auto p-5 box">
+      <h1 class="mb-3 text-center">Smart Login System</h1>
+      <div>
+        <div class="mb-3">
+          <input type="text" class="form-control bg-transparent mb-2" id="registeredName" placeholder="Enter your Name">
+          <label for="registedName" class="nameValid w-100 text-center">Name must be 3 charaters and
+            more!</label>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control bg-transparent mb-2" id="registeredEmail"
+            placeholder="Enter your Email">
+          <label for="registedEmail" class="emailValid w-100 text-center">Enter a valid Email</label>
+        </div>
+        <div class="mb-3">
+          <div class="input-group flex-nowrap mb-2">
+            <input type="password" class="form-control bg-transparent" id="registeredPassword"
+              placeholder="Enter your password" aria-label="Password" aria-describedby="addon-wrapping">
+            <span class="input-group-text bg-transparent p-0 justify-content-center" id="addon-wrapping"><i
+                class="fa-solid fa-eye-slash showPassword text-white-50"></i></span>
+          </div>
+          <label for="registeredPassword" class="passwordValid w-100 text-center">Enter a valid Password</label>
+          <div class="message ">
+            <h6 class="text-white">Password must contain the following:</h6>
+            <p id="letter" class="invalid">At least <b>one lowercase</b> letter</p>
+            <p id="capital" class="invalid">At least <b>one capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">At least <b>one number</b></p>
+            <p id="length" class="invalid">At least <b>8 characters</b></p>
+            <p id="specialCharacters" class="invalid">At least <b>one special character</b></p>
+          </div>
+        </div>
+        <button class="btn btn-outline-info w-100 my-2 signup">Sign Up</button>
+        <label class="successAlert w-100 text-center my-2">Registered Successfully!</label>
+        <label class="emailDuplicate w-100 text-center my-2">Email already exists!</label>
+      </div>
+      <p class="text-white mt-4">You have an account? <span><a href="./index.html"
+            class="text-decoration-none text-info login">Sign In</a></span></p>
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/register.js"></script>
+</body>
+
+</html>
