@@ -6,10 +6,13 @@ var loggedUser = [];
 
 if (localStorage.getItem("loggedUser")) {
   loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
+  if (loggedUser != null) {
+    welcomeMessage.innerHTML = `Welcome ${loggedUser}`;
+  } else {
+    history.back();
+  }
 }
-
 logoutBtn.addEventListener("click", function () {
-  localStorage.removeItem("loggedUser");
+  location.href = "./index.html";
+  localStorage.setItem("loggedUser", null);
 });
-
-welcomeMessage.innerHTML = `Welcome ${loggedUser}`;

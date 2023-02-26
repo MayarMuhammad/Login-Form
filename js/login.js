@@ -19,10 +19,6 @@ if (localStorage.getItem("savedData")) {
   savedData = JSON.parse(localStorage.getItem("savedData"));
 }
 
-if (localStorage.getItem("loggedUser")) {
-  localStorage.removeItem("loggedUser");
-}
-
 showPassword.addEventListener("click", function () {
   if (signinPassword.type === "password") {
     signinPassword.type = "text";
