@@ -4,6 +4,8 @@ body {
   background-color: #24353f;
 }
 .box {
+  width: 50%;
+  margin: auto;
   box-shadow: -5px 2px 54px -9px rgb(0 0 0);
 }
 h1 {
@@ -62,12 +64,18 @@ input {
   content: "✖";
   padding-right: 10px;
 }
-.boxShadow{
+.boxShadow {
   box-shadow: -5px 2px 54px -9px rgb(0 0 0);
 }
-.input-group-text{
+.input-group-text {
   width: 40px;
 }
-.input-group-text:hover{
+.input-group-text:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
+  }
 }
